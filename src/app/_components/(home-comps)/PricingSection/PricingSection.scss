@@ -1,0 +1,23 @@
+.pricing-section {
+  @apply w-full h-full pt-36 lg:pt-32 md:pt-28 pb-14 lg:pb-8;
+
+  .pricing-container {
+    @apply relative;
+
+    .title-row {
+      @apply w-3/5 xl:w-[70%] lg:w-[80%] md:w-[90%] xs:w-[95%] flex flex-col justify-start items-start gap-y-6 sm:gap-y-5 mb-16;
+
+      .title-text {
+        @apply text-[40px] lg:text-[36px] md:text-[32px] xs:text-[28px] md:leading-[42px] font-semibold text-black-accent;
+      }
+
+      .description-text {
+        @apply text-base lg:text-[15px] sm:text-[14.5px] leading-7 sm:leading-[26.5px] text-grey-600/85;
+      }
+    }
+
+    .body-row {
+      @apply grid grid-cols-3 mdLg:grid-cols-1 gap-8 xl:gap-6 mt-8;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.testimonial-section {
+  @apply w-full h-full my-40 lg:my-32 pt-[130px] lg:pt-[110px] pb-[110px] lg:pb-[90px] bg-grey-50;
+
+  .testimonial-container {
+    @apply relative;
+
+    .title-row {
+      @apply w-3/5 xl:w-[70%] lg:w-[75%] md:w-[85%] sm:w-[90%] xs:w-full flex flex-col justify-start items-center gap-y-6 sm:gap-y-5 mb-16 mx-auto;
+
+      .title-text {
+        @apply text-[40px] lg:text-[36px] md:text-[32px] xs:text-[28px] font-semibold text-black-accent text-center;
+      }
+
+      .description-text {
+        @apply text-base lg:text-[15px] sm:text-[14.5px] leading-7 sm:leading-[26.5px] text-grey-600/85 text-center;
+      }
+    }
+
+    .body-area {
+      @apply grid grid-cols-3 mdLg:grid-cols-2 sm:grid-cols-1 gap-9 xl:gap-6 mt-8;
+    }
+  }
+}

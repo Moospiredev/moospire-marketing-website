@@ -1,0 +1,31 @@
+.mobile-menu {
+  @apply fixed w-full inset-0 z-50 bg-white animate-drift-left transition-all duration-300 ease-in-out;
+
+  .top-row {
+    @apply w-full py-5 sm:py-4 flex justify-between items-center gap-x-4 mb-10;
+
+    img {
+      @apply md:w-[160px] xs:w-[150px] h-auto;
+    }
+
+    .icon {
+      @apply text-4xl text-orange-500 cursor-pointer;
+    }
+  }
+
+  .bottom-row {
+    @apply flex flex-col justify-start items-center gap-y-8;
+
+    .nav-item {
+      @apply text-[16.5px] text-grey-600/75;
+    }
+
+    .nav-item--active {
+      @apply text-orange-500;
+    }
+
+    .btn {
+      @apply w-4/5 xs:w-full py-4;
+    }
+  }
+}

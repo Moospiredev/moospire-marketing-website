@@ -1,0 +1,10 @@
+export { default as HeroSection } from "./HeroSection/HeroSection";
+export { default as FeatureSection } from "./FeatureSection/FeatureSection";
+export { default as PricingSection } from "./PricingSection/PricingSection";
+export { default as ProcessSection } from "./ProcessSection/ProcessSection";
+export { default as DesignSection } from "./DesignSection/DesignSection";
+export { default as FAQSection } from "./FAQSection/FAQSection";
+export { default as TestimonialSection } from "./TestimonialSection/TestimonialSection";
+export { default as PricingCard } from "./PricingCard/PricingCard";
+export { default as TestimonialCard } from "./TestimonialCard/TestimonialCard";
+export { default as FAQCard } from "./FAQCard/FAQCard";

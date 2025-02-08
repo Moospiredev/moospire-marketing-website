@@ -1,0 +1,23 @@
+.faq-section {
+  @apply w-full h-full pt-36 lg:pt-32 md:pt-28 pb-14 lg:pb-8;
+
+  .faq-container {
+    @apply relative;
+
+    .title-row {
+      @apply w-3/5 xl:w-[70%] lg:w-[75%] md:w-[85%] sm:w-[90%] xs:w-full flex flex-col justify-start items-center gap-y-6 sm:gap-y-5 mb-16 mx-auto;
+
+      .title-text {
+        @apply text-[40px] lg:text-[36px] md:text-[32px] xs:text-[28px] font-semibold text-black-accent text-center;
+      }
+
+      .description-text {
+        @apply text-base lg:text-[15px] sm:text-[14.5px] leading-7 sm:leading-[26.5px] text-grey-600/85 text-center;
+      }
+    }
+
+    .body-area {
+      @apply w-[65%] mdLg:w-4/5 sm:w-full mx-auto;
+    }
+  }
+}

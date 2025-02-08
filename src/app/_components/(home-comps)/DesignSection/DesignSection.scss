@@ -1,0 +1,59 @@
+.design-section {
+  @apply w-full h-full pt-36 lg:pt-32 md:pt-28 pb-14 lg:pb-8;
+
+  .design-container {
+    @apply relative;
+
+    .title-row {
+      @apply w-3/5 xl:w-[70%] lg:w-[75%] md:w-[85%] sm:w-[90%] xs:w-full flex flex-col justify-start items-center gap-y-6 sm:gap-y-5 mb-16 mx-auto;
+
+      .title-text {
+        @apply text-[40px] lg:text-[36px] md:text-[32px] xs:text-[28px] font-semibold text-black-accent text-center;
+      }
+
+      .description-text {
+        @apply text-base lg:text-[15px] sm:text-[14.5px] leading-7 sm:leading-[26.5px] text-grey-600/85 text-center;
+      }
+    }
+
+    .body-area {
+      .search-row {
+        @apply flex justify-center items-center gap-x-8 md:gap-x-5 mb-8 w-3/5 lg:w-4/5 md:w-[90%] sm:w-full mx-auto;
+
+        .search-input {
+          @apply relative w-full h-auto;
+
+          .icon {
+            @apply absolute top-1/2 left-7 -translate-y-1/2 text-lg text-grey-400 z-10;
+          }
+
+          .form-control {
+            @apply bg-grey-50/75 pl-16 border-grey-100/95;
+          }
+        }
+
+        .search-action {
+          .btn {
+            @apply py-4 md:py-3.5 md:text-[13.5px] bg-orange-100/20 border-orange-100/20 text-orange-500 hover:bg-orange-50 hover:border-orange-50 hover:text-orange-600 transition-all duration-300 ease-in-out;
+          }
+        }
+      }
+
+      .tag-row {
+        @apply w-full flex justify-center items-center gap-x-2.5 overflow-auto mb-8;
+
+        .tag-item {
+          @apply cursor-pointer py-3.5 md:py-3 px-5 md:px-4 rounded-lg border border-grey-300 text-[13.5px] md:text-[13px] font-medium shadow-xl text-nowrap text-grey-700/90 hover:bg-orange-50/20 hover:border-orange-500 hover:text-orange-500 transition-all duration-300 ease-in-out;
+        }
+      }
+
+      .inspiration-board {
+        @apply w-full mx-auto;
+
+        img {
+          @apply w-full h-auto;
+        }
+      }
+    }
+  }
+}

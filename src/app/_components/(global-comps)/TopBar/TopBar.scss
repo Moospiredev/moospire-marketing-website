@@ -1,0 +1,47 @@
+.top-bar {
+  @apply fixed w-full py-5 sm:py-4 border-b border-b-[#D9D9D980] bg-white z-20;
+
+  .top-bar-container {
+    @apply flex justify-between items-center;
+
+    .logo-area {
+      @apply relative;
+
+      img {
+        @apply w-[160px] mdLg:w-[150px] md:w-[160px] xs:w-[150px] h-auto;
+      }
+    }
+
+    .nav-area {
+      @apply relative left-8 lg:left-5 mdLg:left-2 flex justify-center items-center gap-x-8 xl:gap-x-6 mdLg:gap-x-4 md:hidden;
+
+      .nav-item {
+        @apply py-2 px-2.5 xl:px-1.5 text-sm text-black-accent font-medium transition-all duration-300 ease-in-out;
+
+        &.nav-item--active {
+          @apply border-b-2 border-b-orange-400;
+        }
+
+        &:hover {
+          @apply border-b-2 border-b-orange-200;
+        }
+      }
+    }
+
+    .action-area {
+      @apply flex justify-end items-center gap-x-5;
+
+      .submit-btn {
+        @apply px-2 text-[14.5px] text-orange-400 hover:text-orange-500 lg:hidden;
+      }
+
+      .get-started-btn {
+        @apply sm:hidden;
+      }
+
+      .menu-btn {
+        @apply text-4xl text-orange-500 cursor-pointer hidden md:block;
+      }
+    }
+  }
+}
