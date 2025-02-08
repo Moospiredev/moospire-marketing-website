@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MoospireBeta } from "@/app/_assets";
@@ -10,6 +10,12 @@ import "./TopBar.scss";
 const TopBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activePath, setActivePath] = useState("home");
+
+  const [hash, setHash] = useState("");
+
+  useEffect(() => {
+    setHash(window.location.hash);
+  }, [hash]);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -43,7 +49,7 @@ const TopBar = () => {
           </Link>
 
           <Link
-            href="#features"
+            href="/#features"
             onClick={() => setActivePath("features")}
             className={`nav-item ${
               activePath === "features" ? "nav-item--active" : ""
@@ -53,7 +59,7 @@ const TopBar = () => {
           </Link>
 
           <Link
-            href="#plan"
+            href="/#plan"
             onClick={() => setActivePath("plan")}
             className={`nav-item ${
               activePath === "plan" ? "nav-item--active" : ""
@@ -63,7 +69,7 @@ const TopBar = () => {
           </Link>
 
           <Link
-            href="#how-it-works"
+            href="/#how-it-works"
             onClick={() => setActivePath("howItWorks")}
             className={`nav-item ${
               activePath === "howItWorks" ? "nav-item--active" : ""
@@ -73,7 +79,7 @@ const TopBar = () => {
           </Link>
 
           <Link
-            href="#faq"
+            href="/#faq"
             onClick={() => setActivePath("faq")}
             className={`nav-item ${
               activePath === "faq" ? "nav-item--active" : ""

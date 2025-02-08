@@ -24,15 +24,15 @@ const Footer = () => {
               <div className="nav-list-title">Operations</div>
 
               <div className="nav-list-items">
-                <Link href="" className="nav-list-item">
+                <Link href="/#features" className="nav-list-item">
                   Features
                 </Link>
 
-                <Link href="" className="nav-list-item">
+                <Link href="/#how-it-works" className="nav-list-item">
                   How it works
                 </Link>
 
-                <Link href="" className="nav-list-item">
+                <Link href="/#faq" className="nav-list-item">
                   FAQs
                 </Link>
               </div>
@@ -42,11 +42,11 @@ const Footer = () => {
               <div className="nav-list-title">Other Links</div>
 
               <div className="nav-list-items">
-                <Link href="" className="nav-list-item">
+                <Link href="/terms-of-service" className="nav-list-item">
                   Terms of Service
                 </Link>
 
-                <Link href="" className="nav-list-item">
+                <Link href="/privacy-policy" className="nav-list-item">
                   Privacy Policy
                 </Link>
               </div>
