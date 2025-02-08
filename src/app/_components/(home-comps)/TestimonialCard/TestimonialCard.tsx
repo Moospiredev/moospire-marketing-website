@@ -6,9 +6,9 @@ const TestimonialCard = () => {
   return (
     <div className="testimonial-card">
       <div className="testimonial-text">
-        "AskaDoctor's telemedicine service exceeded my expectations. The doctor
+        {`AskaDoctor's telemedicine service exceeded my expectations. The doctor
         provided invaluable advice, listened attentively, and gave a
-        personalized plan. I feel empowered and in control of my health.
+        personalized plan. I feel empowered and in control of my health.`}
       </div>
 
       <div className="testimonial-author-block">

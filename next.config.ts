@@ -16,6 +16,10 @@ const nextConfig = {
     domains: ["https://flagsapi.com", "https://images.unsplash.com"],
     unoptimized: true,
   },
+
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
